@@ -183,11 +183,11 @@ public class FlutterWebView implements PlatformView, MethodCallHandler {
 
     private void registerHandler(final MethodCall methodCall, MethodChannel.Result result) {
         if (context != null) {
-            String handlerName = (String) methodCall.arguments;
+            final String handlerName = (String) methodCall.arguments;
             WVJBWebView.WVJBHandler<String, String> handler = new WVJBWebView.WVJBHandler<String, String>() {
                 @Override
                 public void handler(String s, final WVJBWebView.WVJBResponseCallback<String> wvjbResponseCallback) {
-                    methodChannel.invokeMethod("handlerName", s, new Result() {
+                    methodChannel.invokeMethod(handlerName, s, new Result() {
                         @Override
                         public void success(Object o) {
                             wvjbResponseCallback.onResult((String) o);

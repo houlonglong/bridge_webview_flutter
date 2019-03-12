@@ -7,14 +7,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a87cc3a7-2a60-49ec-a6e7-2efc39338f72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/FlutterWebView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/FlutterWebView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/bridge/BridgeForwarderImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/bridge/IBridgeForwarder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/bridge/TaskDistributor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/view/ObservableWebView.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ios/Runner.xcworkspace/xcuserdata/renxiao.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../ios/Runner.xcworkspace/xcuserdata/renxiao.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ios/Classes/FlutterWebView.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../ios/Classes/FlutterWebView.m" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,28 +27,29 @@
     <session id="1575024534">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="apk" value="1" />
-          <entry key="class" value="5" />
+          <entry key="class" value="6" />
           <entry key="gradle" value="1" />
-          <entry key="java" value="35" />
+          <entry key="java" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="APK" value="1" />
-          <entry key="CLASS" value="5" />
+          <entry key="CLASS" value="6" />
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="35" />
+          <entry key="JAVA" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -83,6 +78,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Development/flutter/bin/cache/artifacts/engine/android-arm/flutter.jar!/io/flutter/plugin/common/MethodChannel.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/FlutterCookieManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -91,15 +95,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/FlutterWebView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            <state relative-caret-position="301">
+              <caret line="207" column="34" selection-start-line="207" selection-start-column="34" selection-end-line="207" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6552#7386#0" expanded="true" />
-                <element signature="e#7385#7386#0" expanded="true" />
+                <element signature="e#6412#7240#0" expanded="true" />
+                <element signature="e#6771#6772#0" expanded="true" />
+                <element signature="e#6868#6869#0" expanded="true" />
+                <element signature="e#7239#7240#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/WebViewFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="153">
+              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -184,8 +190,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,17 +290,6 @@
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
               <item name="webviewflutter" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -386,7 +392,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2463651" />
@@ -441,71 +446,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Development/flutter/bin/cache/artifacts/engine/android-arm/flutter.jar!/io/flutter/plugin/common/MethodChannel.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/bridge/BridgeForwarderImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/io/flutter/plugins/webviewflutterexample/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/bridge/TaskDistributor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/bridge/IBridgeForwarder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/view/ObservableWebView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/FlutterCookieManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/bridge/BridgeForwarderImpl.java" />
+    <entry file="file://$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/bridge/TaskDistributor.java" />
+    <entry file="file://$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/bridge/IBridgeForwarder.java" />
+    <entry file="file://$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/view/ObservableWebView.java" />
     <entry file="file://$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/JavaScriptChannel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -520,6 +464,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/io/flutter/plugins/webviewflutterexample/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/WebViewFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/FlutterCookieManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Development/flutter/bin/cache/artifacts/engine/android-arm/flutter.jar!/io/flutter/plugin/common/MethodChannel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/view/WVJBWebView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -529,20 +508,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/FlutterWebView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        <state relative-caret-position="301">
+          <caret line="207" column="34" selection-start-line="207" selection-start-column="34" selection-end-line="207" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6552#7386#0" expanded="true" />
-            <element signature="e#7385#7386#0" expanded="true" />
+            <element signature="e#6412#7240#0" expanded="true" />
+            <element signature="e#6771#6772#0" expanded="true" />
+            <element signature="e#6868#6869#0" expanded="true" />
+            <element signature="e#7239#7240#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../android/src/main/java/io/flutter/plugins/webviewflutter/WebViewFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
