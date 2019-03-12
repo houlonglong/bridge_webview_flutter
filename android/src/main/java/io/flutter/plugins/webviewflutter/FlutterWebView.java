@@ -18,8 +18,6 @@ import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 import io.flutter.plugin.platform.PlatformView;
-import io.flutter.plugins.webviewflutter.bridge.BridgeForwarderImpl;
-import io.flutter.plugins.webviewflutter.view.ObservableWebView;
 import io.flutter.plugins.webviewflutter.view.WVJBWebView;
 
 public class FlutterWebView implements PlatformView, MethodCallHandler {
@@ -183,16 +181,30 @@ public class FlutterWebView implements PlatformView, MethodCallHandler {
         result.success(null);
     }
 
-    private void registerHandler(MethodCall methodCall, MethodChannel.Result result) {
+    private void registerHandler(final MethodCall methodCall, MethodChannel.Result result) {
         if (context != null) {
-            ObservableWebView.WVJBHandler<String, String> handler = new ObservableWebView.WVJBHandler<String, String>() {
+            String handlerName = (String) methodCall.arguments;
+            WVJBWebView.WVJBHandler<String, String> handler = new WVJBWebView.WVJBHandler<String, String>() {
                 @Override
-                public void handler(String s, WVJBWebView.WVJBResponseCallback<String> wvjbResponseCallback) {
-                    new BridgeForwarderImpl(context).receiveMessageFromJs(s, wvjbResponseCallback);
+                public void handler(String s, final WVJBWebView.WVJBResponseCallback<String> wvjbResponseCallback) {
+                    methodChannel.invokeMethod("handlerName", s, new Result() {
+                        @Override
+                        public void success(Object o) {
+                            wvjbResponseCallback.onResult((String) o);
+                        }
+
+                        @Override
+                        public void error(String s, String s1, Object o) {
+                            wvjbResponseCallback.onResult(s);
+                        }
+
+                        @Override
+                        public void notImplemented() {
+
+                        }
+                    });
                 }
             };
-
-            String handlerName = (String) methodCall.arguments;
             webView.registerHandler(handlerName, handler);
             result.success(null);
         } else {
