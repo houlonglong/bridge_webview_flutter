@@ -8,6 +8,7 @@ import android.content.Context;
 import android.util.Log;
 import android.view.View;
 import android.webkit.WebStorage;
+import android.webkit.WebView;
 
 import java.util.List;
 import java.util.Map;
@@ -33,7 +34,7 @@ public class FlutterWebView implements PlatformView, MethodCallHandler {
         webView = new WVJBWebView(context);
         // Allow local storage.
         webView.getSettings().setDomStorageEnabled(true);
-
+        WebView.setWebContentsDebuggingEnabled(true);
         methodChannel = new MethodChannel(messenger, "plugins.flutter.io/webview_" + id);
         methodChannel.setMethodCallHandler(this);
 
@@ -187,19 +188,25 @@ public class FlutterWebView implements PlatformView, MethodCallHandler {
             WVJBWebView.WVJBHandler<String, String> handler = new WVJBWebView.WVJBHandler<String, String>() {
                 @Override
                 public void handler(String s, final WVJBWebView.WVJBResponseCallback<String> wvjbResponseCallback) {
-                    methodChannel.invokeMethod(handlerName, s, new Result() {
+                    Log.e("registerHandler", s);
+                    methodChannel.invokeMethod("jsBridge", s, new Result() {
                         @Override
                         public void success(Object o) {
+                            Log.e("registerHandler/success", o.toString());
                             wvjbResponseCallback.onResult((String) o);
                         }
 
                         @Override
                         public void error(String s, String s1, Object o) {
+                            Log.e("registerHandler/error", o.toString());
+
                             wvjbResponseCallback.onResult(s);
                         }
 
                         @Override
                         public void notImplemented() {
+                            Log.e("registerHandler/notImplemented", "");
+
 
                         }
                     });

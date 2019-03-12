@@ -10,6 +10,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 
 typedef void WebViewCreatedCallback(WebViewController controller);
+typedef Future<dynamic> OnJsBridgeCall(MethodCall methodCall);
 
 enum JavascriptMode {
   /// JavaScript execution is disabled.
@@ -75,6 +76,7 @@ class WebView extends StatefulWidget {
   const WebView({
     Key key,
     this.onWebViewCreated,
+    this.onJsBridgeCall,
     this.initialUrl,
     this.javascriptMode = JavascriptMode.disabled,
     this.javascriptChannels,
@@ -85,6 +87,8 @@ class WebView extends StatefulWidget {
 
   /// If not null invoked once the web view is created.
   final WebViewCreatedCallback onWebViewCreated;
+
+  final OnJsBridgeCall onJsBridgeCall;
 
   /// Which gestures should be consumed by the web view.
   ///
@@ -496,8 +500,23 @@ class WebViewController {
     // TODO(amirh): remove this on when the invokeMethod update makes it to stable Flutter.
     // https://github.com/flutter/flutter/issues/26431
     // ignore: strong_mode_implicit_dynamic_method
-    await _channel.invokeMethod("registerHandler", handlerName);
-    return reload();
+    final String result =
+        await _channel.invokeMethod("registerHandler", handlerName);
+    return result;
+  }
+
+  Future<dynamic> setMethodCallHandler(OnJsBridgeCall onJsBridgeCall) async {
+    _channel.setMethodCallHandler((call) async {
+      switch (call.method) {
+        case "jsBridge":
+          if (onJsBridgeCall != null) {
+            return onJsBridgeCall(call);
+          }
+          return Future.error('onJsBridgeCall is null');
+        default:
+          return Future.error('method name ${call.method} is not supported');
+      }
+    });
   }
 }
 
